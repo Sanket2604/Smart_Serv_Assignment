@@ -22,6 +22,7 @@ function App() {
     <div className="app container py-5">
       <div className="row">
         <div className="col-12">
+          <h4 style={{textAlign: 'center'}}>Sanket Banerjee's Assignment</h4>
           <h5>Task:</h5>
           <ol>
             <li>Fetch the JSON file programmatically and store the data in the data structure of your choice.</li>
@@ -31,7 +32,7 @@ function App() {
         <div className="col-12">
           <h5>Deliverables:</h5>
           <ul>
-            <li>Hosting URL on Github pages:</li>
+            <li>Hosting URL: <a href='https://charming-liger-7e0b34.netlify.app/'>https://charming-liger-7e0b34.netlify.app/</a></li>
             <li>Github repository link to your solution: <a href='https://github.com/Sanket2604/Smart_Serv_Assignment' target='_blank'>https://github.com/Sanket2604/Smart_Serv_Assignment</a></li>
             <li>Time taken to complete this: 1 and half hour</li>
           </ul>
@@ -41,7 +42,7 @@ function App() {
         <div className="col-12 mb-4 result">Result: {MobileData?.length}</div>
         {MobileData ? MobileData.map((data,i)=>
           <MobileCard key={i} data={data} />
-        ):<div className='col-12 loading'>Hello</div>}
+        ):<div className='col-12 mt-5'><h5 style={{textAlign: 'center'}}>Loading......</h5></div>}
       </div>
     </div>
   );
